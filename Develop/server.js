@@ -33,9 +33,9 @@ app.get('/notes', (req, res) => {
 });
 
 /*
- * API Routes
+ * API Routes dB
  */
-// const dB = [];
+// const db = [];
 // GET route for existing notes
 app.get('/api/notes', (req, res) => {
     console.log("getting notes data");
@@ -48,7 +48,7 @@ app.get('/api/notes', (req, res) => {
 app.post('/api/notes', (req, res) => {
     console.log("posting note");
     console.log("request", req.body);
-    dB.push(req.body);
+    db.push(req.body);
     return res.send();
 })
 
