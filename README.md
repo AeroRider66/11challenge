@@ -18,3 +18,10 @@ After first note created by the User will have buttons to delete a note, or to m
 ## Current Issues 
 ### POST function
 ### recall of data 2nd time
+
+## Documentation and deployment locations
+Repository:
+https://github.com/AeroRider66/11challenge
+
+Deployed
+https://aerorider66.github.io/11challenge
