@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 //const api = require('./routes/api');
 
 const PORT = process.env.port || 3001;
@@ -34,16 +35,20 @@ app.get('/notes', (req, res) => {
 /*
  * API Routes
  */
-
+// const dB = [];
 // GET route for existing notes
 app.get('/api/notes', (req, res) => {
     console.log("getting notes data");
-    return res.send({foo: 'bar'});
+
+    const data = fs.readFileSync(path.join(__dirname, '/db/db.json'), 'utf8')
+    return res.send(data);
 })
 
 // POST route to add note
 app.post('/api/notes', (req, res) => {
     console.log("posting note");
+    console.log("request", req.body);
+    dB.push(req.body);
     return res.send();
 })
 
