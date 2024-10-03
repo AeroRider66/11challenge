@@ -18,7 +18,7 @@ Users will be able to delete a current note, or one they just entered.  (not wor
 After first note created by the User will have buttons to delete a note, or to make a new note
 
 ## Current Issues 
-### POST function
+### POST function - not functinoal and will not post data to notes db
 ### recall of data 2nd time
 
 ## Documentation and deployment locations
